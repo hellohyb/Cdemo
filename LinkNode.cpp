@@ -12,10 +12,12 @@ typedef struct Link{
 void initLink(){
     Link* L = new Link;
     L->data = 0;
+
 }
 int main(){
     Link* l1 = new Link;
     l1->data = 0;
+    l1->next = NULL;
     cout<<l1->data;
 
     return 0;
