@@ -36,6 +36,7 @@ int main(){
     insertHead(l1,3);
     insertHead(l1,4);
     insertHead(l1,5);
+    insertHead(l1,6);
     print(l1);
     return 0;
 }
