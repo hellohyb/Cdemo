@@ -3,25 +3,10 @@
 //
 
 #include<iostream>
+#include<Windows.h>
 using namespace std;
-
-class Person{
-public:
-    Person(){
-        cout<<"我是"<<endl;
-    };
-    ~Person(){
-        cout<<"我是析构函数"<<endl;
-    };
-private:
-
-};
-double calculate(double x,int i){
-    if(i == 3) return 1 + 1 / x;
-    return 1 + 1 / calculate(x,i+1);
-}
 int main(){
-    cout<<calculate(5.0, 1)<<endl;
-    Person person;
+    const char* path = "C:\\Users\\Administrator\\Desktop\\picture\\壁纸\\wallhaven-dgekog.jpeg";
+    SystemParametersInfoA(0x0014,0,(PVOID)path,0x0002);
     return 0;
 }
